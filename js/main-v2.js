@@ -87,3 +87,49 @@
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+/* v2.1 — Motion & depth enhancements */
+(function () {
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  /* 3D tilt + cursor spotlight (desktop only) */
+  if (finePointer && !reduce) {
+    var tiltEls = document.querySelectorAll(".card, .model, .why__item");
+    tiltEls.forEach(function (el) {
+      el.addEventListener("mousemove", function (e) {
+        var r = el.getBoundingClientRect();
+        var x = e.clientX - r.left, ypos = e.clientY - r.top;
+        el.style.setProperty("--mx", x + "px");
+        el.style.setProperty("--my", ypos + "px");
+        var rx = (ypos / r.height - 0.5) * -6;
+        var ry = (x / r.width - 0.5) * 6;
+        el.style.transform = "perspective(800px) rotateX(" + rx.toFixed(2) + "deg) rotateY(" + ry.toFixed(2) + "deg) translateY(-6px)";
+      });
+      el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+    });
+  }
+
+  /* Directional reveals: split sections slide in from the sides */
+  document.querySelectorAll(".split").forEach(function (s) {
+    var kids = Array.prototype.slice.call(s.children);
+    if (kids[0] && kids[0].classList.contains("reveal")) kids[0].classList.add("from-left");
+    if (kids[1] && kids[1].classList.contains("reveal")) kids[1].classList.add("from-right");
+  });
+  /* Impact tiles pop in */
+  document.querySelectorAll(".impact__item.reveal").forEach(function (el) { el.classList.add("pop"); });
+
+  /* Timeline draws its connector line when visible */
+  var tl = document.querySelector(".timeline");
+  if (tl && "IntersectionObserver" in window && !reduce) {
+    var tio = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { tl.classList.add("drawn"); obs.disconnect(); }
+      });
+    }, { threshold: 0.3 });
+    tio.observe(tl);
+  } else if (tl) {
+    tl.classList.add("drawn");
+  }
+})();
