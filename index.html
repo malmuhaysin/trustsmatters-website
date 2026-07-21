@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles-v3.css" />
+  <link rel="stylesheet" href="css/v13.css" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"Trusts Matters",
    "url":"https://www.trustsmatters.com","logo":"https://www.trustsmatters.com/assets/img/logo.png",
@@ -178,16 +179,97 @@
           <div class="cap__out">Software your users trust and attackers don't break.</div>
         </div></div>
       </article>
+      <article class="cap">
+        <button class="cap__head" aria-expanded="false">
+          <span class="cap__num">09</span>
+          <span class="cap__t"><h3>Manpower</h3><p>IT and cybersecurity specialists, embedded in your team.</p></span>
+          <span class="cap__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="cap__body"><div class="cap__in">
+          <div class="chips"><span class="chip">Resident engineers</span><span class="chip">Security specialists</span><span class="chip">Staff augmentation</span><span class="chip">Short &amp; long term</span></div>
+          <div class="cap__out">The right expertise inside your team, without the hiring overhead.</div>
+        </div></div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ STATEMENT ============ -->
-<section class="section statement">
+<!-- ============ 02 · TRUST LOOP ============ -->
+<section class="section tloop-s" id="loop">
   <div class="container">
-    <div class="slabel reveal"><i>02</i> Our point of view</div>
-    <p class="q reveal d1" style="margin-top:26px">Security and technology are one conversation. <em>We make trust the foundation</em> you build on.</p>
-    <div class="by reveal d2">Trusts Matters</div>
+    <div class="shead center reveal">
+      <div class="slabel"><i>02</i> The trust loop</div>
+      <h2>One continuous system.</h2>
+      <p>Security and technology are one conversation. We make trust the foundation you build on.</p>
+    </div>
+    <div class="tloop reveal d1" id="tloop" aria-label="Trust loop: strategy, build, secure, comply, trust">
+      <div class="tloop__rot">
+        <div class="tnode" style="left:50%;top:7%"><div class="tnode__in"><div class="tnode__dot">Strategy</div><div class="tnode__sub">Direction</div></div></div>
+        <div class="tnode" style="left:90.9%;top:36.7%"><div class="tnode__in"><div class="tnode__dot">Build</div><div class="tnode__sub">Systems &amp; software</div></div></div>
+        <div class="tnode" style="left:75.3%;top:84.8%"><div class="tnode__in"><div class="tnode__dot">Secure</div><div class="tnode__sub">Tested &amp; defended</div></div></div>
+        <div class="tnode" style="left:24.7%;top:84.8%"><div class="tnode__in"><div class="tnode__dot">Comply</div><div class="tnode__sub">Regulator ready</div></div></div>
+        <div class="tnode tnode--gold" style="left:9.1%;top:36.7%"><div class="tnode__in"><div class="tnode__dot">Trust</div><div class="tnode__sub">The outcome</div></div></div>
+      </div>
+      <div class="tloop__hub"><img src="assets/img/logo.png" alt="" /><span>One partner</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · ECOSYSTEM ============ -->
+<section class="section" id="ecosystem">
+  <div class="container">
+    <div class="shead center reveal">
+      <div class="slabel"><i>03</i> One system</div>
+      <h2>Everything connects to one partner.</h2>
+      <p>Hover or tap a domain to see what lives inside it.</p>
+    </div>
+    <div class="eco reveal d1">
+      <svg class="eco__lines" aria-hidden="true"></svg>
+      <div class="eco__hub"><img src="assets/img/logo.png" alt="Trusts Matters" /><span>Trusts Matters</span></div>
+      <div class="eco__wrap">
+        <button class="eco__node" style="left:20%;top:16%">Cybersecurity</button>
+        <button class="eco__node" style="left:80%;top:16%">Technology</button>
+        <button class="eco__node" style="left:20%;top:88%">Cloud</button>
+        <button class="eco__node" style="left:80%;top:88%">Manpower</button>
+      </div>
+    </div>
+    <div class="eco__panel" id="ecoPanel" aria-live="polite">
+      <b id="ecoT"></b>
+      <p id="ecoD"></p>
+      <div class="chips" id="ecoC"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · SECURE FROM DAY ONE ============ -->
+<section class="section" id="dayone">
+  <div class="container">
+    <div class="shead center reveal">
+      <div class="slabel"><i>04</i> Secure from day one</div>
+      <h2>Security travels with the build.</h2>
+      <p>Not a phase at the end. A thread through every step.</p>
+    </div>
+    <div class="pipe reveal d1">
+      <svg viewBox="0 0 1100 250" aria-hidden="true" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="pipeGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0E7C86"/><stop offset=".55" stop-color="#5FE3D1"/><stop offset="1" stop-color="#E0BE78"/>
+          </linearGradient>
+        </defs>
+        <path class="pipe__path" d="M40,125 C220,35 330,215 550,125 C770,35 880,215 1060,125"/>
+        <path class="pipe__glow" d="M40,125 C220,35 330,215 550,125 C770,35 880,215 1060,125"/>
+      </svg>
+      <span class="pipe__pkt" aria-hidden="true"></span>
+      <span class="pipe__pkt" aria-hidden="true"></span>
+      <span class="pipe__pkt" aria-hidden="true"></span>
+      <div class="pst" style="left:3.6%;top:56%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span><b>Idea</b></div>
+      <div class="pst" style="left:22%;top:12%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><b>Architecture</b></div>
+      <div class="pst" style="left:41%;top:62%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><b>Development</b></div>
+      <div class="pst pst--sec" style="left:60%;top:12%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><b>Security</b></div>
+      <div class="pst" style="left:79%;top:62%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><b>Compliance</b></div>
+      <div class="pst" style="left:96.4%;top:56%"><span class="pst__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span><b>Launch</b></div>
+    </div>
+    <p class="pipe__note reveal d2">The gold node is the difference: <em>security sits inside the line,</em> not after it.</p>
   </div>
 </section>
 
@@ -195,7 +277,7 @@
 <section class="section" id="approach">
   <div class="container">
     <div class="shead reveal">
-      <div class="slabel"><i>03</i> How we work</div>
+      <div class="slabel"><i>05</i> How we work</div>
       <h2>Five steps. One journey.</h2>
       <p>Select a phase to see what happens and what you get.</p>
     </div>
@@ -220,11 +302,64 @@
   </div>
 </section>
 
-<!-- ============ 04 · TRUST ============ -->
+<!-- ============ 06 · DEFENSE IN MOTION ============ -->
+<section class="defense" id="defense">
+  <canvas id="defcv" aria-hidden="true"></canvas>
+  <div class="defense__cap container">
+    <div class="slabel reveal"><i>06</i> Defense in motion</div>
+    <h2 class="reveal d1">Threats stopped before they reach you.</h2>
+    <div class="defense__legend reveal d2">
+      <span class="l-data"><i></i> Data moving securely</span>
+      <span class="l-threat"><i></i> Threat detected &amp; blocked</span>
+      <span class="l-layer"><i></i> Control layers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · COMPARISON ============ -->
+<section class="section" id="compare">
+  <div class="container">
+    <div class="shead reveal">
+      <div class="slabel"><i>07</i> The difference</div>
+      <h2>One partner, not four handoffs.</h2>
+      <p>Watch how work actually moves in each model.</p>
+    </div>
+    <div class="cmp reveal d1">
+      <div class="cmp__row cmp__row--old">
+        <div class="cmp__hdr"><b>Traditional approach</b><span>4 vendors · 4 contracts · every gap a delay</span></div>
+        <div class="cmp__track">
+          <div class="seg">Strategy</div>
+          <div class="gap"><i>Vendor gap</i><b></b></div>
+          <div class="seg">Build</div>
+          <div class="gap"><i>Vendor gap</i><b></b></div>
+          <div class="seg">Security</div>
+          <div class="gap"><i>Vendor gap</i><b></b></div>
+          <div class="seg">Compliance</div>
+        </div>
+        <div class="cmp__lane" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="cmp__row cmp__row--new">
+        <div class="cmp__hdr"><b>Trusts Matters</b><span>One team · one contract · one motion</span></div>
+        <div class="cmp__track">
+          <div class="seg">Strategy</div>
+          <span class="arrowsep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <div class="seg">Build</div>
+          <span class="arrowsep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <div class="seg">Secure</div>
+          <span class="arrowsep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <div class="seg">Comply</div>
+        </div>
+        <div class="cmp__lane" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · TRUST ============ -->
 <section class="section" id="trust">
   <div class="container">
     <div class="shead reveal">
-      <div class="slabel"><i>04</i> Why us</div>
+      <div class="slabel"><i>08</i> Why us</div>
       <h2>Built on trust, proven in practice.</h2>
     </div>
     <div class="t360 reveal d1">
@@ -268,10 +403,29 @@
   </div>
 </section>
 
-<!-- ============ 05 · CLOSING ============ -->
+<!-- ============ 09 · TRUST ARCHITECTURE ============ -->
+<section class="section" id="architecture">
+  <div class="container">
+    <div class="shead center reveal">
+      <div class="slabel"><i>09</i> Trust architecture</div>
+      <h2>Six layers. One foundation.</h2>
+      <p>Each layer stands on the one beneath it. Trust is what they add up to.</p>
+    </div>
+    <div class="arch reveal d1" id="arch">
+      <div class="alayer alayer--gold"><i>06</i><b>Trust</b><span>The outcome</span></div>
+      <div class="alayer"><i>05</i><b>Compliance</b><span>Proven to regulators</span></div>
+      <div class="alayer"><i>04</i><b>Cybersecurity</b><span>Tested and monitored</span></div>
+      <div class="alayer"><i>03</i><b>Technology</b><span>Cloud, systems, software</span></div>
+      <div class="alayer"><i>02</i><b>Architecture</b><span>Designed before built</span></div>
+      <div class="alayer"><i>01</i><b>Strategy</b><span>Direction before design</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · CLOSING ============ -->
 <section class="section close-s" id="contact">
   <div class="container">
-    <div class="slabel reveal" style="justify-content:center"><i>05</i> Next step</div>
+    <div class="slabel reveal" style="justify-content:center"><i>10</i> Next step</div>
     <h2 class="reveal d1" style="margin-top:22px">Let's make trust <em>your advantage.</em></h2>
     <p class="reveal d1">A security assessment, a compliance program, a penetration test or your next digital product. Start the conversation.</p>
     <div class="hero__actions reveal d2">
@@ -327,5 +481,6 @@
 </footer>
 
 <script src="js/main-v3.js"></script>
+<script src="js/v13.js"></script>
 </body>
 </html>
